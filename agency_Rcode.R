@@ -14,7 +14,7 @@ library("pROC")
 #####
 ## préparation des données
 # on charge le fichier résultat
-df_original_status <- read.csv("C:/Users/camil/OneDrive/Documents/STATUS RESULTS MARCH - CopyR.csv")
+df_original_status <- read.csv("https://github.com/CamillePerault/Agency_in_language__an_evolutionary_perspective/blob/main/results_gender.csv")
 
 ## on isole les indicateurs soumis à la contrainte du sujet (qui feront l'objet d'analyses successives non traitées dans ce mémoire)
 df_wo_subject_status <- df_original_status[, -grep("with.locutor.as.subject", names(df_original_status))]
